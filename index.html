@@ -29,26 +29,84 @@
 </head>
 
 <body>
-
+    <!-- <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav> -->
     <!-- Header -->
     <header>
         <div class="header">
-            <nav class="header__nav">
-                <a href="#" class="header__brand">PORT<span class="header__brand--span">FOLIO</span></a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="https://twitter.com/home" target="_blank" rel="noopener">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <nav class="fixed-top header__nav navbar navbar-expand-lg bg-dark navbar-dark"
+                style="background-color:rgba(36, 35, 35, 0.376) !important;">
+                <div class="container-fluid">
+                    <a href="#" class="header__brand navbar-brand">PORT<span
+                            class="header__brand--span">FOLIO</span></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>       
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="#" >Home</a></li>
+                            <li class="nav-item"><a href="about.html">About</a></li>
+                            <li class="nav-item"><a href="https://twitter.com/home" target="_blank" rel="noopener">Portfolio</a></li>
+                            <li class="nav-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
+                
+
             <div class="header__image--sm">
-                <img src="https://github.com/KG-2023/Activity-Images-2023/blob/main/pexels-royal-anwar-450213.jpg?raw=true" alt="header image small" loading="lazy">
+                <img src="https://github.com/KG-2023/Activity-Images-2023/blob/main/pexels-royal-anwar-450213.jpg?raw=true"
+                    alt="header image small" loading="lazy">
             </div>
-            <div class="header__heading">
+            <!-- Heading text Desktop -->
+            <div class="header__heading--desktop">
                 <h1 class="header__heading--h1">Rodrigo Lopez</h1>
                 <h2>Freelance Front-end Web Developer</h2>
             </div>
+
+            <!-- Heading text for Mobile -->
+            <div class="header__heading--mobile">
+                <h1 class="">WEB DEVELOPER</h1>
+                <h2 class="header__heading--h2">Hi, I am <span class="header__heading--span1">Rodrigo Lopez</span>
+                    
+                    <span class="header__heading--span2">Let's Connect</span>
+                </h2>
+            </div>
+
         </div>
     </header>
 
@@ -68,7 +126,7 @@
         <div class="portfolio">
             <h2 class="portfolio__heading--h2">MY PORTFOLIO</h2>
             <div class="portfolio__container">
-                <div class="portfolio__img" ><img loading="lazy"
+                <div class="portfolio__img"><img loading="lazy"
                         src="https://github.com/KG-2023/Activity-Images-2023/blob/main/pexels-dominika-roseclay-2023384.jpg?raw=true"
                         alt="image of a dog"></div>
                 <div class="portfolio__img"><img loading="lazy"
