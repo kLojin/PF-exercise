@@ -11,6 +11,9 @@ CSS SPECIFICITY > WHICH CODE WILL BE GIVEN IMPORTANCE
     box-sizing: border-box;
 }
 
+:root {
+    --background-overlay:rgba(36, 35, 35, 0.376)
+}
 /*ELEMENT SELECTORS - GENERAL STYLINGS*/
 
 body{   
@@ -49,7 +52,8 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 3% 7%;
-    background-color: rgba(36, 35, 35, 0.376);
+    /* background-color: rgba(36, 35, 35, 0.376); */
+    background-color: var(--background-overlay);
 }
 
 
@@ -62,6 +66,11 @@ a{
   color: white;
   text-decoration: none;
   font-size: 18px;
+}
+
+.header__image--sm{
+    /* visibility: hidden;  */
+    display: none;
 }
 
 .header__heading{
@@ -262,3 +271,43 @@ footer{
     color: #fff;
 
 }
+
+
+
+/****************************************************MEDIA QUERIES****************************/
+
+/***********MEDIA QUERY HEADER SECTION*****/
+@media only screen and (max-width: 600px) {
+    .header{
+        background-image: none;
+        background-color: #242323;
+    }
+
+    .header__image--sm{
+        display: block;
+    }
+
+    .header__image--sm img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+/* 
+@media only screen and (max-width: 768px) {
+
+} */
+
+
+/***********MEDIA QUERY ABOUT SECTION*****/
+
+/***********MEDIA QUERY PORTFOLIO SECTION*****/
+
+/***********MEDIA QUERY CONTACT SECTION*****/
+
+/***********MEDIA QUERY FOOTER SECTION*****/
