@@ -6,49 +6,51 @@ CSS SPECIFICITY > WHICH CODE WILL BE GIVEN IMPORTANCE
 4. !important
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root {
-    --background-overlay:rgba(36, 35, 35, 0.376)
+    --background-overlay: rgba(36, 35, 35, 0.376)
 }
+
 /*ELEMENT SELECTORS - GENERAL STYLINGS*/
 
-body{   
+body {
     /* background-color: orangered; */
     font-family: 'Poppins', sans-serif;
-} 
+}
 
-a{
+a {
     text-decoration: none;
 }
+
 /* CUSTOM CLASSNAME SELECTORS*/
 
 /****************************************************HEADER SECTION****************************/
-.header{
-  position: relative;
-  height: 100vh;
-  background-image: linear-gradient(rgba(3,4,7, 0.48), rgba(5, 10, 30, 0.48)),
-  url('../images/pexels-royal-anwar-450214.jpg');
-  background-size: cover;
-  background-position: center;
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba(3, 4, 7, 0.48), rgba(5, 10, 30, 0.48)),
+        url('../images/pexels-royal-anwar-450214.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-.header__brand{
+.header__brand {
     color: #fff;
     font-size: 48px;
     font-weight: 700;
 }
 
-.header__brand--span{
+.header__brand--span {
     color: #20E700;
 }
 
 
-.header__nav{
+.header__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,66 +60,100 @@ a{
 }
 
 
-.header__nav ul li{
+.header__nav ul li {
     display: inline-block;
     margin: 10px 20px;
 }
 
-.header__nav ul li a{
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
+.header__nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.header__image--sm{
+.header__image--sm {
     /* visibility: hidden;  */
     display: none;
 }
 
-.header__heading--desktop{
-   position: absolute;
+.header__heading--desktop {
+    position: absolute;
     /* background-color: green; */
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
 }
 
-.header__heading--mobile{
+.header__heading--mobile {
     display: none;
 }
 
-.header__heading--h1{
+.header__heading--h1 {
     font-size: 70px;
     margin-top: 10px;
 }
 
 /****************************************************ABOUT SECTION****************************/
-.about{
+.about {
     height: 80vh;
     background-color: #1E1E1E;
     color: #fff;
 }
 
-.about__heading{
+.about__heading {
     width: 50%;
     text-align: center;
     margin: auto;
 }
 
-.about__heading--h2{
+.about__heading--h2 {
     font-size: 60px;
     padding-top: 6rem;
 }
 
-.about__heading--p{
+.about__heading--p {
     text-align: center;
+}
+
+.about__skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3%;
+    margin: auto;
+}
+
+.about__skills-h3 {
+    padding-right: 5%;
+}
+
+.about__skills-h3--1{
+    border-bottom: 3px solid #20E700;
+    width:5%;
+    margin-right: 50px;
+}
+
+.about__content{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 4%;
+    /* background-color: green; */
+    width: 50%;
+    padding-left: 2%;
+   text-align: left;
+}
+
+.about__content-h3{
+    color: #20E700;
+    font-weight: 700;
 }
 
 
 /****************************************************PORTFOLIO SECTION****************************/
 
-.portfolio{
+.portfolio {
     /* height: 180vh; 1024 x 728 */
     height: 200vh;
     padding: 50px;
@@ -125,24 +161,24 @@ a{
     color: #362D2D;
 }
 
-.portfolio__heading--h2{
- font-size: 60px;
- margin-top: 1%;
+.portfolio__heading--h2 {
+    font-size: 60px;
+    margin-top: 1%;
 }
 
 
-.portfolio__container{
+.portfolio__container {
     display: grid;
     /*two dimensional*/
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     /* NOTE TO SELF:  grid-gap: 30px; good for 1024 x 768 screen size*/
-    padding: 5%; 
+    padding: 5%;
     margin-top: 50px;
 }
 
 
-.portfolio__img img{
+.portfolio__img img {
     object-fit: cover;
     width: 100%;
     height: 400px;
@@ -151,54 +187,55 @@ a{
 
 }
 
-.portfolio__btn{
-  background-color: #45893A;
-  color: #fff;
-  height: 75px;
-  width: 303px;
-  padding: 2% 5%;
-  border-radius: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  
-} 
+.portfolio__btn {
+    background-color: #45893A;
+    color: #fff;
+    height: 75px;
+    width: 303px;
+    padding: 2% 5%;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
 /****************************************************CONTACT SECTION****************************/
-.contact{
+.contact {
     height: 100vh;
     color: #fff;
-    background-color:#3E3C3C;
+    background-color: #3E3C3C;
     padding: 5%;
 }
 
-.contact__row{
-  display: flex;
-/*  flex-direction: row; */
-  /* flex-wrap: wrap; */
+.contact__row {
+    display: flex;
+    /*  flex-direction: row; */
+    /* flex-wrap: wrap; */
 }
 
-.contact__row--left{
+.contact__row--left {
     /* background-color: green;   */
     flex-basis: 45%;
 }
 
-.contact__heading--h2{
+.contact__heading--h2 {
     font-size: 60px;
 }
 
-.contact__row--left p{
- margin-top: 30px;
+.contact__row--left p {
+    margin-top: 30px;
 }
 
-.contact__left--icons{
+.contact__left--icons {
     margin-top: 15px;
 }
 
-.contact__row--left p i{
+.contact__row--left p i {
     color: #20E700;
     margin-right: 10px;
 }
 
-.contact__left--icons a{
+.contact__left--icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -206,7 +243,7 @@ a{
     /* display: inline-block; */
 }
 
-.contact__btn{
+.contact__btn {
     display: block;
     margin: 50px auto;
     border: 1px solid #2ecc71;
@@ -217,26 +254,27 @@ a{
     width: fit-content;
 }
 
-.contact__btn:hover{
+.contact__btn:hover {
     background-color: #2ecc71;
 }
 
-.contact__btn.contact__btn--1{
-    display:inline-block;
+.contact__btn.contact__btn--1 {
+    display: inline-block;
 }
 
-.contact__row--right{
+.contact__row--right {
     /* background-color: blue; */
     flex-basis: 60%;
 }
 
-.contact__row--right form{
+.contact__row--right form {
     width: 100%;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
-   outline:none;
+    outline: none;
     background: #312D2D;
     border: 6px;
     color: #fff;
@@ -245,19 +283,20 @@ form input, form textarea {
     margin: 15px 0;
 }
 
-form input:hover, form textarea:hover {
+form input:hover,
+form textarea:hover {
     outline-style: solid;
     outline-color: red;
 }
 
-.contact__btn.contact__btn--2{
+.contact__btn.contact__btn--2 {
     display: inline-block;
     background-color: #312D2D;
     font-size: 18px;
     margin: 0;
 }
 
-.contact__btn--2:hover{
+.contact__btn--2:hover {
     background-color: #2ecc71;
     cursor: pointer;
 }
@@ -266,7 +305,7 @@ form input:hover, form textarea:hover {
 
 /****************************************************FOOTER SECTION****************************/
 
-footer{
+footer {
     height: 15vh;
     width: 100%;
     text-align: center;
@@ -283,21 +322,21 @@ footer{
 
 /***********MEDIA QUERY HEADER SECTION*****/
 @media only screen and (max-width: 600px) {
-    .header{
-      
+    .header {
+
         background-image: none;
         /* background-color: #242323; */
         background-color: #3E3C3C;
     }
 
-   
 
-  
-    .header__image--sm{
+
+
+    .header__image--sm {
         display: block;
     }
 
-    .header__image--sm img{
+    .header__image--sm img {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -306,17 +345,18 @@ footer{
         width: 200px;
         border-radius: 50%;
         object-fit: cover;
-        
-        
+
+
     }
 
-    .header__heading--desktop{
+    .header__heading--desktop {
         display: none;
     }
-    .header__heading--mobile{
+
+    .header__heading--mobile {
         display: block;
         position: absolute;
-        top:80%;
+        top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: #fff;
@@ -325,23 +365,24 @@ footer{
         text-align: center;
     }
 
-    .header__heading--h2{
-      font-size: 20px;
-       
+    .header__heading--h2 {
+        font-size: 20px;
+
     }
 
-    .header__heading--span1{
-        color:#20E700;
+    .header__heading--span1 {
+        color: #20E700;
         /* background-color: blue; */
-       
+
     }
 
-    .header__heading--span2{
+    .header__heading--span2 {
         display: block;
         /* background-color: yellow; */
     }
 
 }
+
 /* 
 @media only screen and (max-width: 768px) {
 
