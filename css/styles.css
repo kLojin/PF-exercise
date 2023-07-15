@@ -375,7 +375,6 @@ footer {
 
     .header__heading--h2 {
         font-size: 20px;
-
     }
 
     .header__heading--span1 {
@@ -425,6 +424,7 @@ footer {
 
     .about__heading--h2{
         font-size: 30px;
+        font-weight: 700;
     }
 
     .about__heading{
@@ -448,7 +448,27 @@ footer {
 
 
 /***********MEDIA QUERY PORTFOLIO SECTION*****/
+@media only screen and (max-width: 600px) {
+    .portfolio{
+        height: 200vh;
+    }
 
+    .portfolio__heading--h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .portfolio__img img{
+        width: 70%;
+        height: 280px;
+        margin: 0 auto 5%;
+
+    }
+
+    .portfolio__img:last-child {
+        margin-bottom: 10%;
+    }
+}
 /***********MEDIA QUERY CONTACT SECTION*****/
 
 /***********MEDIA QUERY FOOTER SECTION*****/
