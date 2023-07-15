@@ -297,7 +297,7 @@ form textarea:hover {
     display: inline-block;
     background-color: #312D2D;
     font-size: 18px;
-    margin: 0;
+    margin:  0;
 }
 
 .contact__btn--2:hover {
@@ -469,13 +469,40 @@ footer {
         margin-bottom: 10%;
     }
 
-   
     .portfolio__btn { 
         padding: 5% 15%;
+
     }
 
 
 }
 /***********MEDIA QUERY CONTACT SECTION*****/
+@media only screen and (max-width: 600px) {
+
+    .contact{
+        height: 180vh;
+    }
+
+    .contact__row{
+        flex-direction: column;
+    }
+
+    .contact__heading--h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+  
+    .contact__btn.contact__btn--2 {
+        margin: 10% 0;
+    }
+
+
+}
+
 
 /***********MEDIA QUERY FOOTER SECTION*****/
+
+@media only screen and (max-width: 600px) {
+
+}
