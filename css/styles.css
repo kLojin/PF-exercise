@@ -468,6 +468,13 @@ footer {
     .portfolio__img:last-child {
         margin-bottom: 10%;
     }
+
+   
+    .portfolio__btn { 
+        padding: 5% 15%;
+    }
+
+
 }
 /***********MEDIA QUERY CONTACT SECTION*****/
 
