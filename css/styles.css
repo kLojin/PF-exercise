@@ -34,7 +34,7 @@ a {
     position: relative;
     height: 100vh;
     background-image: linear-gradient(rgba(3, 4, 7, 0.48), rgba(5, 10, 30, 0.48)),
-        url('../images/pexels-royal-anwar-450214.jpg');
+        url('https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
 }
