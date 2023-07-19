@@ -83,6 +83,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    text-align: center;
 }
 
 .header__heading--mobile {
@@ -92,6 +93,7 @@ a {
 .header__heading--h1 {
     font-size: 70px;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 /****************************************************ABOUT SECTION****************************/
@@ -117,7 +119,7 @@ a {
 }
 
 .about__heading--paragraph{
-    text-align: center;
+    text-align: justify;
 }
 
 .about__skills {
