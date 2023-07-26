@@ -33,7 +33,7 @@ a {
 .header {
     position: relative;
     height: 100vh;
-    background-image: linear-gradient(rgba(3, 4, 7, 0.48), rgba(5, 10, 30, 0.48)),
+    background-image: linear-gradient(rgba(29, 221, 71, 0.1), rgba(16, 226, 226, 0.1)),
         url('https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
@@ -98,8 +98,8 @@ a {
 
 /****************************************************ABOUT SECTION****************************/
 .about {
-    height: 80vh;
-    background-color: #1E1E1E;
+    height: 90vh;
+    background-color: #1e7965;
     color: #fff;
 }
 
@@ -161,7 +161,7 @@ a {
 
 .portfolio {
     /* height: 180vh; 1024 x 728 */
-    height: 200vh;
+    height: 100vh;
     padding: 50px;
     text-align: center;
     color: #362D2D;
@@ -207,7 +207,7 @@ a {
 
 /****************************************************CONTACT SECTION****************************/
 .contact {
-    height: 100vh;
+    height: 90vh;
     color: #fff;
     background-color: #3E3C3C;
     padding: 5%;
