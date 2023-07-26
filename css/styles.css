@@ -33,7 +33,7 @@ a {
 .header {
     position: relative;
     height: 100vh;
-    background-image: linear-gradient(rgba(29, 221, 71, 0.1), rgba(16, 226, 226, 0.1)),
+    background-image: 
         url('https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
@@ -84,6 +84,7 @@ a {
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: center;
+
 }
 
 .header__heading--mobile {
@@ -94,6 +95,8 @@ a {
     font-size: 70px;
     margin-top: 10px;
     font-weight: bold;
+    -webkit-text-stroke-color: rgba(2, 2, 2, 0.55);
+    -webkit-text-stroke-width: 2px;
 }
 
 /****************************************************ABOUT SECTION****************************/
