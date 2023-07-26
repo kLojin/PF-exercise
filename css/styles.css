@@ -95,8 +95,8 @@ a {
     font-size: 70px;
     margin-top: 10px;
     font-weight: bold;
-    -webkit-text-stroke-color: rgba(2, 2, 2, 0.55);
-    -webkit-text-stroke-width: 2px;
+    /* -webkit-text-stroke-color: rgba(2, 2, 2, 0.55);
+    -webkit-text-stroke-width: 2px; */
 }
 
 /****************************************************ABOUT SECTION****************************/
@@ -193,11 +193,17 @@ a {
     height: 400px;
     display: block;
     border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.15s;
+}
 
+.portfolio__img img:hover {
+    opacity: 1;
 }
 
 .portfolio__btn {
-    background-color: #45893A;
+    background-color: #1e7965;
     color: #fff;
     height: 75px;
     width: 303px;
@@ -208,11 +214,16 @@ a {
 
 }
 
+.portfolio__btn:hover {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
 /****************************************************CONTACT SECTION****************************/
 .contact {
     height: 90vh;
     color: #fff;
-    background-color: #3E3C3C;
+    background-color: #1e7965;
     padding: 5%;
 }
 
@@ -261,10 +272,12 @@ a {
     text-decoration: none;
     color: #fff;
     width: fit-content;
+    transition: background-color 0.15s;
 }
 
 .contact__btn:hover {
     background-color: #2ecc71;
+    color: #fff;
 }
 
 .contact__btn.contact__btn--1 {
@@ -284,9 +297,9 @@ form input,
 form textarea {
     width: 100%;
     outline: none;
-    background: #312D2D;
+    background: #ffffff;
     border: 6px;
-    color: #fff;
+    color: #0b4e3e;
     font-size: 18px;
     padding: 15px;
     margin: 15px 0;
@@ -295,12 +308,12 @@ form textarea {
 form input:hover,
 form textarea:hover {
     outline-style: solid;
-    outline-color: red;
+    outline-color: rgb(10, 230, 57);
 }
 
 .contact__btn.contact__btn--2 {
     display: inline-block;
-    background-color: #312D2D;
+    background-color: #1e7965;
     font-size: 18px;
     margin:  0;
 }
@@ -315,13 +328,13 @@ form textarea:hover {
 /****************************************************FOOTER SECTION****************************/
 
 footer {
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     text-align: center;
-    padding: 3% 0;
-    background-color: #171515;
+    padding: 2% 0;
+    background-color: #ffffff;
     font-weight: 400;
-    color: #fff;
+    color: #064b3a;
 
 }
 
@@ -335,7 +348,7 @@ footer {
 
         background-image: none;
         /* background-color: #242323; */
-        background-color: #3E3C3C;
+        background-color: #03291f;
     }
 
 
@@ -404,7 +417,7 @@ footer {
 /***********MEDIA QUERY ABOUT SECTION*****/
 @media only screen and (max-width: 600px) {
     .about{
-        height: 150vh;
+        height: 130vh;
         padding-top: 10%;
         
     }
@@ -416,15 +429,20 @@ footer {
     }
 
     .about__img img{
-        height: 200px;
+        height: 300px;
         width: 200px;
         border-radius: 10px;
+        /* opacity: 0.5;
+        transition: opacity 0.15s; */
+        transition: box-shadow 0.15s;
     }
 
     .about__img img:hover{
-        transform: translate(-5px, -10px);
+        transform: translate(1px, 1px);
         cursor: pointer;
-        box-shadow: 13px 10px 5px 0px rgba(133,121, 121, 0.75);
+        box-shadow: 0px 0px 30px rgba(115, 255, 0, 0.75);
+        /* opacity: 1; */
+        animation:  1s ease-in-out infinite alternate;
     }
 
     .about__heading--h2{
@@ -437,7 +455,7 @@ footer {
     }
 
     .about__heading--paragraph{
-        text-align: left;
+        text-align: justify;
     }
 
     .about__content{
@@ -455,7 +473,7 @@ footer {
 /***********MEDIA QUERY PORTFOLIO SECTION*****/
 @media only screen and (max-width: 600px) {
     .portfolio{
-        height: 200vh;
+        height: 150vh;
     }
 
     .portfolio__heading--h2{
@@ -485,7 +503,7 @@ footer {
 @media only screen and (max-width: 600px) {
 
     .contact{
-        height: 180vh;
+        height: 130vh;
     }
 
     .contact__row{
@@ -511,7 +529,7 @@ footer {
 @media only screen and (max-width: 600px) {
     footer p{
       
-        padding: 5% 0 0;
+        padding: 4% 0 0;
 
     }
 }
