@@ -55,6 +55,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 3% 7%;
+    height: 100px;
     /* background-color: rgba(36, 35, 35, 0.376); */
     /* background-color: var(--background-overlay); */
 }
@@ -101,7 +102,7 @@ a {
 
 /****************************************************ABOUT SECTION****************************/
 .about {
-    height: 90vh;
+    height: 110vh;
     background-color: #1e7965;
     color: #fff;
 }
@@ -164,7 +165,7 @@ a {
 
 .portfolio {
     /* height: 180vh; 1024 x 728 */
-    height: 100vh;
+    height: 125vh;
     padding: 50px;
     text-align: center;
     color: #362D2D;
@@ -173,6 +174,7 @@ a {
 .portfolio__heading--h2 {
     font-size: 60px;
     margin-top: 1%;
+    color: #1e7965;
 }
 
 
@@ -183,7 +185,7 @@ a {
     grid-gap: 40px;
     /* NOTE TO SELF:  grid-gap: 30px; good for 1024 x 768 screen size*/
     padding: 5%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 
@@ -221,7 +223,7 @@ a {
 
 /****************************************************CONTACT SECTION****************************/
 .contact {
-    height: 90vh;
+    height: 110vh;
     color: #fff;
     background-color: #1e7965;
     padding: 5%;
@@ -328,7 +330,7 @@ form textarea:hover {
 /****************************************************FOOTER SECTION****************************/
 
 footer {
-    height: 10vh;
+    height: 12vh;
     width: 100%;
     text-align: center;
     padding: 2% 0;
@@ -417,7 +419,7 @@ footer {
 /***********MEDIA QUERY ABOUT SECTION*****/
 @media only screen and (max-width: 600px) {
     .about{
-        height: 130vh;
+        height: 160vh;
         padding-top: 10%;
         
     }
@@ -425,7 +427,7 @@ footer {
     .about__img{
         display: block;
         text-align: center;
-        padding: 10% 3% 0% 0;
+        padding: 2% 0% 0% 0;
     }
 
     .about__img img{
@@ -448,6 +450,7 @@ footer {
     .about__heading--h2{
         font-size: 30px;
         font-weight: 700;
+        margin-top: -65px;
     }
 
     .about__heading{
@@ -473,7 +476,7 @@ footer {
 /***********MEDIA QUERY PORTFOLIO SECTION*****/
 @media only screen and (max-width: 600px) {
     .portfolio{
-        height: 150vh;
+        height: 240vh;
     }
 
     .portfolio__heading--h2{
@@ -483,7 +486,7 @@ footer {
 
     .portfolio__img img{
         width: 70%;
-        height: 280px;
+        height: 320px;
         margin: 0 auto 5%;
 
     }
@@ -503,7 +506,7 @@ footer {
 @media only screen and (max-width: 600px) {
 
     .contact{
-        height: 130vh;
+        height: 175vh;
     }
 
     .contact__row{
