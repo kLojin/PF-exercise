@@ -14,7 +14,7 @@
 
 ## Github Page Live Link: https://klojin.github.io/PF-exercise/
 
-## Github Repository Link: 
+## Github Repository Link: https://github.com/kLojin/PF-exercise.git
 
 ## Project Goals / Services provided by the application:
 
