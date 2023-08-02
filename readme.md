@@ -1,14 +1,14 @@
 # Project-documentation
 
-## PROJECT TITLE MINI-PROJECT 1: Portfolio Landing Page
+## MINI-PROJECT 1: Portfolio Landing Page
 
 ## Background of Project
 
->  Simple site to demonstrate my mini project 1 in the bootcamp.
+>  Simple site to demonstrate my mini project 1 Website.
 
 ## Sitemap
 
-![alt text]()
+![alt text](https://github.com/kLojin/project-documentation/blob/main/sitemap.png?raw=true)
 
 ## Wireframe LFD & HFD Link: https://www.figma.com/file/dy1yTw2APsjDqoB9ZuuO2T/LOW-FIDELITY-DESIGN?type=design&node-id=0%3A1&mode=design&t=lyqDd4IdJlzzyHvY-1
 
@@ -18,9 +18,14 @@
 
 ## Project Goals / Services provided by the application:
 
-1. Goal 1
-2. Goal 2
-3. Goal 3
+1. Create a simple portfolio website
+2. Share some of the projects that we've created
+3. Share what I have learned so far
+
+## Technologies and Version
+1. HTML, CSS, Bootstrap 5.3
+2. Animate.css
+3. AOS
 
 ## Outside Contributors:
 
@@ -29,7 +34,7 @@
 
 ## Current Features Implemented
 
-1. Responsive Design with the use of Media queries
+1. Responsive Design with the use of Media Queries
 2. Bootstrap Navigation
 3. Bootstrap buttons for toggling navigation
 
@@ -47,7 +52,9 @@
 > --- Mobile ---
 ![alt text](https://github.com/kLojin/project-documentation/blob/main/mobile.PNG?raw=true)
 
-### What are the Additional Post-release features (Optional)
+### What are the Additional Post-release features
 
-1. Feature 1
-2. Feature 2
+1. Complete the missing details and links on the website
+2. Add a Search bar on the Landing page
+3. Add Facebook post links using HTML iframe Syntax
+4. Add image slideshows
