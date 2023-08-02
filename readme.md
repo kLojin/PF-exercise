@@ -27,7 +27,7 @@
 2. Animate.css
 3. AOS
 
-## Outside Contributors:
+## Contributors:
 
 1. Friend 1: Desktop Testing
 2. Friend 2: Mobile Testing
