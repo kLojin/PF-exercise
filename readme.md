@@ -54,6 +54,7 @@
 
 ### What are the Additional Post-release features
 
-1. Add a Search bar on the Landing page
-2. Add Facebook post links using HTML iframe Syntax
-3. Add image slideshows
+1. Complete the About Section Page
+2. Add a Search bar on the Landing page
+3. Add Facebook post links using HTML iframe Syntax
+4. Add image slideshows
