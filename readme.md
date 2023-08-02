@@ -58,3 +58,7 @@
 2. Add a Search bar on the Landing page
 3. Add Facebook post links using HTML iframe Syntax
 4. Add image slideshows
+
+
+
+> ----- END OF PRESENTATION ----- 
