@@ -4,7 +4,7 @@
 
 ## Background of Project
 
->  Simple site to demonstrate my projects in the bootcamp.
+>  Simple site to demonstrate my mini project 1 in the bootcamp.
 
 ## Sitemap
 
@@ -12,7 +12,7 @@
 
 ## Github Page Live Link: https://klojin.github.io/PF-exercise/
 
-## Github Repository Link: 
+## Github Repository Link: https://github.com/kLojin/PF-exercise.git
 
 ## Project Goals / Services provided by the application:
 
